@@ -1,0 +1,55 @@
+
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.parallax {
+    position: relative;
+    height: 100%;
+}
+.parallax__mountain {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.parallax__mountain--1 {
+    background: url(../../assets/images/main_mountain.jpg) center/cover no-repeat;
+}
+.parallax__mountain--3 {
+    z-index: 0;
+    background: url(../../assets/images/right_mountain_dark_crop.png) no-repeat right bottom;
+    background-size: 70%;
+}
+.parallax__mountain--2 {
+    z-index: 1;
+    background: url(../../assets/images/left_mountain_crop.png)left bottom  no-repeat ;
+    background-size: 60%;
+}
+.parallax__fog {
+    background: url(../../assets/images/fog_1.png) bottom/100% no-repeat;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.blankArea {
+    height: 2000px;
+}
+.MainPage__title {
+    font-weight: 900;
+    font-size: 96px;
+    text-align: center;
+}
+.MainPage__subTitle {
+    font-size: 56px;
+    text-align: center;
+}
