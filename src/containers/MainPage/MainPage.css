@@ -71,3 +71,73 @@
     text-decoration: none;
     color: #ff6700;
 }
+
+.MainPage__scrollSign {
+    width: 50px;
+    height: 90px;
+    border: 3px solid #e7e7e7;
+    border-radius: 60px;
+    position: relative;
+    z-index: 15;
+    top: 50px;
+    animation: sign 2s infinite alternate-reverse;
+    -webkit-animation: sign 2s infinite;
+    transition: all 0.5s;
+}
+.MainPage__scrollSign::before {
+     content: '';
+     width: 12px;
+     height: 12px;
+     position: absolute;
+     top: 10px;
+     left: 50%;
+     transform: translateX(-50%);
+     background-color: #e7e7e7;
+     border-radius: 50%;
+     opacity: 1;
+     animation: wheel 2s infinite;
+     -webkit-animation: wheel 2s infinite;
+}
+.MainPage__darkBg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(50,50,50, 0.5);
+    z-index: 14;
+    transition: all 0.5s;
+}
+.hidden {
+    opacity: 0;
+}
+
+@keyframes sign {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+@-webkit-keyframes sign {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+@keyframes wheel {
+    to {
+        opacity: 0;
+        top: 60px;
+    }
+}
+
+@-webkit-keyframes wheel {
+    to {
+        opacity: 0;
+        top: 60px;
+    }
+}
