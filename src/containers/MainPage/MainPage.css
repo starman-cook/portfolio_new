@@ -110,10 +110,9 @@
 }
 .hidden {
     opacity: 0;
+    z-index: 8;
 }
-.gone {
-    display: none;
-}
+
 
 @keyframes sign {
     0% {
