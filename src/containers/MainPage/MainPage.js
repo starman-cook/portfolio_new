@@ -1,6 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react'
 import './MainPage.css'
 import PortfolioItem from "../../components/PortfolioItem/PortfolioItem";
+import {useSelector} from "react-redux";
 
 const MainPage = () => {
 
@@ -11,6 +12,8 @@ const MainPage = () => {
     const mountThree = useRef(null)
     const fog = useRef(null)
 
+    const portfolioItems = useSelector(state => state.portfolioItems)
+
     const [scrollTop, setScrollTop] = useState(0);
     useEffect(() => {
         function onScroll() {
@@ -19,7 +22,6 @@ const MainPage = () => {
             let w = page.current.clientWidth
             let h = page.current.clientHeight
             let h_b = parallax.current.clientHeight
-            console.log(scrollTop)
             let p = scrollTop / h * 100
             let p_b = scrollTop / h_b * 100
             let o = 1 - 1 / 150 * p_b
@@ -55,7 +57,6 @@ const MainPage = () => {
 
         }
 
-        console.log(scrollTop)
         window.addEventListener("scroll", onScroll);
         return () => window.removeEventListener("scroll", onScroll);
 
@@ -66,8 +67,19 @@ window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 }
 
+let renderedPortfolioItems
+
+    if (portfolioItems.length) {
+        renderedPortfolioItems = portfolioItems.map((el, i) => {
+            return <PortfolioItem key={i}
+                text={el.text}
+                imagesAndDetails={el.imagesAndDetails}
+            />
+        })
+    }
+
     return (
-        <div>
+        <div className="MainPage">
             <div className="page" ref={page}>
                 <div className="parallax"  ref={parallax}>
                     <div className="parallax__mountain parallax__mountain--1" ref={mountOne}/>
@@ -79,8 +91,14 @@ window.onbeforeunload = function () {
             <div className={"blankArea"} />
             <h1 className={"MainPage__title"}>Pasha M</h1>
             <h1 className={"MainPage__subTitle"}>Web-developer</h1>
-            <div className={"blankArea"} />
-            <PortfolioItem />
+            <div className={"blankArea--afterName"} />
+            <h1 className={"MainPage__subTitle"}>Portfolio</h1>
+            <div className={"blankArea--afterName"} />
+            {renderedPortfolioItems}
+            <div className={"MainPage__contactsBlock"}>
+                <p>E-mail: pashamishakov@gmail.com</p>
+                <a href={"https://www.linkedin.com/in/pavel-pasha-mishakov-726014a8/"}>LinkedIn</a>
+            </div>
         </div>
     )
 }

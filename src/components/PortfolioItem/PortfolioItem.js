@@ -1,11 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './PortfolioItem.css'
+import Modal from "../Modal/Modal";
 
 const PortfolioItem = (props) => {
+    const [isModal, setIsModal] = useState(false)
+    const toggleModal = () => {
+        setIsModal(!isModal)
+    }
     return (
-        <div onClick={props.click} className={"PortfolioItem"}>
-            <p className={"PortfolioItem__text"}>{props.text}</p>
-        </div>
+        <>
+            <div onClick={toggleModal} className={"PortfolioItem"}>
+                <p  className={"PortfolioItem__text"}>{props.text}</p>
+            </div>
+            {isModal ? <Modal
+                close={toggleModal}
+                imagesAndDetails={props.imagesAndDetails}
+            /> : null}
+        </>
     )
 }
 

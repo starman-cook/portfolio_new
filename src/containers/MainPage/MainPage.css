@@ -6,6 +6,11 @@
     top: 0;
     left: 0;
 }
+.MainPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .parallax {
     position: relative;
@@ -42,7 +47,10 @@
 }
 
 .blankArea {
-    height: 2000px;
+    height: 1500px;
+}
+.blankArea--afterName {
+    height: 1000px;
 }
 .MainPage__title {
     font-weight: 900;
@@ -52,4 +60,14 @@
 .MainPage__subTitle {
     font-size: 56px;
     text-align: center;
+}
+.MainPage__contactsBlock {
+    z-index: 10;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    margin: 20px auto 50px auto;
+}
+.MainPage__contactsBlock > a {
+    text-decoration: none;
+    color: #ff6700;
 }
