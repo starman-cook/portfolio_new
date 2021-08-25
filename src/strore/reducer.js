@@ -2,6 +2,7 @@ const initialState = {
     portfolioItems: [
         {
             text: "\"IT Support Company\" CRM project (React, JS, NodeJS)",
+            link: "https://github.com/starman-cook/it_support",
             imagesAndDetails:  [
                 {
                     original: './screenshots/ItSupport/login_simple_1000_600.png',
@@ -57,6 +58,7 @@ const initialState = {
         },
         {
             text: "\"Attractor School\", notification bot (TypeScript, Telegram, MongoDB, NodeJS)",
+            link: "https://github.com/starman-cook/attractor_notification_bot_version_2p",
             imagesAndDetails:  [
                 {
                     original: './screenshots/bot/instructions_1000_600.png',
@@ -87,6 +89,7 @@ const initialState = {
         },
         {
             text: "\"Froot\" Company, survey over employees (Electron, React, JS, NodeJS, MongoDB)",
+            link: "https://github.com/starman-cook/FrootWatcher",
             imagesAndDetails:  [
                 {
                     original: './screenshots/bigBrother/tray_icon_1000_600.png',
@@ -117,6 +120,7 @@ const initialState = {
         },
         {
             text: "\"Froot\" Company, conversation room(s) reserve (React, JS, NodeJS, MongoDB)",
+            link: "https://github.com/starman-cook/froot_project",
             imagesAndDetails:  [
                 {
                     original: './screenshots/roomReserve/calendar_1000_600.png',

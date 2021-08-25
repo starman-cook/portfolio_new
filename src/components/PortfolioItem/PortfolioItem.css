@@ -18,5 +18,11 @@
     font-weight: bold;
     text-shadow: 1px 1px 3px black;
 }
-
-
+.PortfolioItem__link {
+    text-decoration: none;
+    color: #00fdd5;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px black;
+    z-index: 10;
+    margin-bottom: 30px;
+}

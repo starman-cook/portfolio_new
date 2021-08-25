@@ -73,6 +73,7 @@ let renderedPortfolioItems
         renderedPortfolioItems = portfolioItems.map((el, i) => {
             return <PortfolioItem key={i}
                 text={el.text}
+                link={el.link}
                 imagesAndDetails={el.imagesAndDetails}
             />
         })
