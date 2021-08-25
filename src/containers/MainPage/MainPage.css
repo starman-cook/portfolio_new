@@ -111,6 +111,9 @@
 .hidden {
     opacity: 0;
 }
+.gone {
+    display: none;
+}
 
 @keyframes sign {
     0% {

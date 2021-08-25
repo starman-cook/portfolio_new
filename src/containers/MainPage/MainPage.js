@@ -81,8 +81,8 @@ let renderedPortfolioItems
 
     return (
         <div className="MainPage">
-            <div className={`MainPage__darkBg ${scrollTop !== 0 && "hidden"}`} />
-            <div className={`MainPage__scrollSign ${scrollTop !== 0 && "hidden"}`} />
+            <div className={`MainPage__darkBg ${scrollTop !== 0 && "hidden"} ${scrollTop > 1000 && "gone"}`} />
+            <div className={`MainPage__scrollSign ${scrollTop !== 0 && "hidden"} ${scrollTop > 1000 && "gone"}`} />
             <div className="page" ref={page}>
                 <div className="parallax"  ref={parallax}>
                     <div className="parallax__mountain parallax__mountain--1" ref={mountOne}/>
