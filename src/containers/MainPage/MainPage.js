@@ -40,8 +40,13 @@ const MainPage = () => {
                 mountOne.current.style.opacity = o_2
 
 
-                let hr = w / 2000 * p_b;
-                let z_3 = 1 + (w * 0.00003 * p_b);
+                let hr = w / 2000 * p_b
+                let z_3
+                if (w > 1000) {
+                    z_3 = 1 + (w * 0.00003 * p_b);
+                } else {
+                    z_3 = 1 + (w * 0.00008 * p_b)
+                }
                 mountTwo.current.style.transform = 'translate3d(' + hr + 'px, 0, 0) scale(' + z_3 + ')'
                 mountTwo.current.style.opacity = o_3
 
