@@ -81,7 +81,7 @@
     z-index: 15;
     top: 50px;
     animation: sign 2s infinite alternate-reverse;
-    -webkit-animation: sign 2s infinite;
+    -webkit-animation: sign 2s infinite alternate-reverse;
     transition: all 0.5s;
 }
 .MainPage__scrollSign::before {
