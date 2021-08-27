@@ -2,7 +2,9 @@ const initialState = {
     portfolioItems: [
         {
             text: "\"IT Support Company\" CRM project (React, JS, NodeJS)",
-            link: "https://github.com/starman-cook/it_support",
+            shortName: "IT Support Company",
+            linkProject: null,
+            linkGitHub: "https://github.com/starman-cook/it_support",
             imagesAndDetails:  [
                 {
                     original: './screenshots/ItSupport/login_simple_1000_600.png',
@@ -58,7 +60,9 @@ const initialState = {
         },
         {
             text: "\"Attractor School\", notification bot (TypeScript, Telegram, MongoDB, NodeJS)",
-            link: "https://github.com/starman-cook/attractor_notification_bot_version_2p",
+            shortName: "Attractor bot",
+            linkProject: null,
+            linkGitHub: "https://github.com/starman-cook/attractor_notification_bot_version_2p",
             imagesAndDetails:  [
                 {
                     original: './screenshots/bot/instructions_1000_600.png',
@@ -89,7 +93,9 @@ const initialState = {
         },
         {
             text: "\"Froot\" Company, survey over employees (Electron, React, JS, NodeJS, MongoDB)",
-            link: "https://github.com/starman-cook/FrootWatcher",
+            shortName: "Froot survey program",
+            linkProject: null,
+            linkGitHub: "https://github.com/starman-cook/FrootWatcher",
             imagesAndDetails:  [
                 {
                     original: './screenshots/bigBrother/tray_icon_1000_600.png',
@@ -120,7 +126,9 @@ const initialState = {
         },
         {
             text: "\"Froot\" Company, conversation room(s) reserve (React, JS, NodeJS, MongoDB)",
-            link: "https://github.com/starman-cook/froot_project",
+            shortName: "Froot room reserves",
+            linkProject: null,
+            linkGitHub: "https://github.com/starman-cook/froot_project",
             imagesAndDetails:  [
                 {
                     original: './screenshots/roomReserve/calendar_1000_600.png',
@@ -144,6 +152,24 @@ const initialState = {
                 }
             ]
         },
+        {
+            text: "Game \"Snake\" (JS, CSS, HTML)",
+            shortName: "Game Snake",
+            linkProject: "https://starman-cook.github.io/snake/index.html",
+            linkGitHub: "https://github.com/starman-cook/snake",
+            imagesAndDetails: [
+                {
+                    original: './screenshots/snake/snake_start_1000_600.png',
+                    thumbnail: './screenshots/snake/snake_start_250_150.png',
+                    description: "Made a game just for fun, try it yourself"
+                },
+                {
+                    original: './screenshots/snake/snake_level_1000_600.png',
+                    thumbnail: './screenshots/snake/snake_level_250_150.png',
+                    description: "There are 4 levels, speed increases with each level and each apple"
+                }
+            ]
+        }
     ]
 }
 

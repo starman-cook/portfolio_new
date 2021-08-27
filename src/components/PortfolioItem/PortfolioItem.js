@@ -12,7 +12,8 @@ const PortfolioItem = (props) => {
             <div onClick={toggleModal} className={"PortfolioItem"}>
                 <p  className={"PortfolioItem__text"}>{props.text}</p>
             </div>
-            <a target={"_blanc"} className={"PortfolioItem__link"} href={props.link}>Github repository</a>
+            {props.linkGitHub && <a target={"_blanc"} className={"PortfolioItem__link"} href={props.linkGitHub}>{props.textLinkGitHub}</a>}
+            {props.linkProject && <a target={"_blanc"} className={"PortfolioItem__link"} href={props.linkProject}>{props.textLinkProject}</a>}
 
             {isModal ? <Modal
                 close={toggleModal}

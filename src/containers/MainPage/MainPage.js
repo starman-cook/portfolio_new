@@ -78,7 +78,10 @@ let renderedPortfolioItems
         renderedPortfolioItems = portfolioItems.map((el, i) => {
             return <PortfolioItem key={i}
                 text={el.text}
-                link={el.link}
+                linkProject={el.linkProject}
+                textLinkProject={`Try ${el.shortName} yourself`}
+                textLinkGitHub={`GitHub for ${el.shortName}`}
+                linkGitHub={el.linkGitHub}
                 imagesAndDetails={el.imagesAndDetails}
             />
         })
@@ -105,7 +108,7 @@ let renderedPortfolioItems
             {renderedPortfolioItems}
             <div className={"MainPage__contactsBlock"}>
                 <p>E-mail: pashamishakov@gmail.com</p>
-                <a href={"https://www.linkedin.com/in/pavel-pasha-mishakov-726014a8/"}>LinkedIn</a>
+                <a target={"_blanc"} href={"https://www.linkedin.com/in/pavel-pasha-mishakov-726014a8/"}>LinkedIn</a>
             </div>
         </div>
     )
