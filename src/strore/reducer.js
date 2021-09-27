@@ -169,6 +169,34 @@ const initialState = {
                     description: "There are 4 levels, speed increases with each level and each apple"
                 }
             ]
+        },
+        {
+            text: "Messenger (JS, React, WebSocket, MongoDB, NodeJS, Cucumber, Selenium, CSS, HTML)",
+            shortName: "Messenger",
+            linkProject: null,
+            linkGitHub: "https://github.com/starman-cook/tt_chat",
+            imagesAndDetails: [
+                {
+                    original: './screenshots/chat/fullScreen_noMessages_1000_600.png',
+                    thumbnail: './screenshots/chat/fullScreen_noMessages_250_150.png',
+                    description: "Messenger shows who is online, who is registered and what chats do I already have"
+                },
+                {
+                    original: './screenshots/chat/actionChat_1000_600.png',
+                    thumbnail: './screenshots/chat/actionChat_250_150.png',
+                    description: "Messages appear immediately in interlocutor message window, no reload or interval needed, thanks to WebSocket"
+                },
+                {
+                    original: './screenshots/chat/register_1000_600.png',
+                    thumbnail: './screenshots/chat/register_250_150.png',
+                    description: "Users register and each user has its own chats"
+                },
+                {
+                    original: './screenshots/chat/login_1000_600.png',
+                    thumbnail: './screenshots/chat/login_250_150.png',
+                    description: "Just a login page))"
+                }
+            ]
         }
     ]
 }
