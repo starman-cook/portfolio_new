@@ -197,6 +197,34 @@ const initialState = {
                     description: "Just a login page))"
                 }
             ]
+        },
+        {
+            text: "Game \"Miner\" (JS, React, CSS, HTML)",
+            shortName: "Game Miner (find the treasure)",
+            linkProject: "https://eager-varahamihira-e29f69.netlify.app/",
+            linkGitHub: "https://github.com/starman-cook/miner_game",
+            imagesAndDetails: [
+                {
+                    original: './screenshots/miner/clear_1000_600.png',
+                    thumbnail: './screenshots/miner/clear_250_150.png',
+                    description: "Empty field of the game, two modes of the game: Hard and Easy, and reset button"
+                },
+                {
+                    original: './screenshots/miner/hard_1000_600.png',
+                    thumbnail: './screenshots/miner/hard_250_150.png',
+                    description: "Hard mode only says if mine is near somewhere (red square) and if it is safe the square colors into orange"
+                },
+                {
+                    original: './screenshots/miner/lost_1000_600.png',
+                    thumbnail: './screenshots/miner/lost_250_150.png',
+                    description: "If you step on the mine you lose the game"
+                },
+                {
+                    original: './screenshots/miner/easy_1000_600.png',
+                    thumbnail: './screenshots/miner/easy_250_150.png',
+                    description: "Easy mode shows the exact location of mine if you make a safe step nearby"
+                }
+            ]
         }
     ]
 }
